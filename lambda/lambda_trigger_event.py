@@ -17,11 +17,11 @@ def handler(event, context):
                 'Resources': [
                 ],
                 'DetailType': 'Custom Event demo',
-                'Detail': json.dumps(event),
-                # 'Detail': '{ "key1": "value1", "key2": "value2" }',
+                # 'Detail': json.dumps(event),
+                'Detail': '{ "name": "crazyfreaktwo", "salary": "101", "married": "true"}',
                 # 'EventBusName': event_client.describe_rule(Name='custom-rule-demo')['Arn'],
-                'EventBusName': 'custom-rule-demo' # manually set the event bus name
-                # 'TraceHeader': 'testdemo'
+                'EventBusName': 'custom-rule-demo', # manually set the event bus name,
+                'TraceHeader': 'testdemo'
             }
         ]
     )
